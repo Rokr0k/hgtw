@@ -1,0 +1,13 @@
+StartChar: slash
+Encoding: 47 47 26
+Width: 0
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+-200 375 m 25
+ -200 250 l 1053
+-475 250 m 25
+ 75 250 l 1049
+EndSplineSet
+EndChar

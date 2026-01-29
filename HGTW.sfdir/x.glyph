@@ -1,0 +1,12 @@
+StartChar: x
+Encoding: 120 120 2
+Width: 0
+Flags: M
+LayerCount: 2
+Fore
+SplineSet
+-875 75 m 25
+ -525 75 l 25
+ -525 -175 l 1053
+EndSplineSet
+EndChar

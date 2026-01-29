@@ -1,0 +1,113 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          version: '3.x'
+
+      - name: Setup FontForge
+        run: |
+          sudo apt update
+          sudo apt install -y fontforge-nox python3-fontforge
+
+      - name: Generate Fonts
+        run: python build.py
+
+      - name: Copy Fonts
+        run: cp -t public/ HGTW.ttf HGTW.otf HGTW.woff2
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: files
+          path: |
+            HGTW.ttf
+            HGTW.otf
+            HGTW.woff2
+            public/
+          retention-days: 1
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: files
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            HGTW.ttf
+            HGTW.otf
+            HGTW.woff2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  pages:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: files
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  cleanup:
+    needs: [release, pages]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Delete Temporary Artifacts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const res = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId,
+            });
+            const artifact = res.data.artifacts.find(a => a.name === "files");
+            if (artifact) {
+              await github.rest.actions.deleteArtifact({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                artifact_id: artifact.id,
+              });
+              console.log("Build artifact deleted successfully.");
+            }

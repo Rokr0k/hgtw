@@ -1,0 +1,13 @@
+StartChar: parenright
+Encoding: 41 41 79
+Width: 500
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+100 350 m 27
+ 100 399 126 450 175 450 c 27
+ 245 450 255 350 325 350 c 27
+ 374 350 400 401 400 450 c 1052
+EndSplineSet
+EndChar

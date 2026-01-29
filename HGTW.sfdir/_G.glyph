@@ -1,0 +1,17 @@
+StartChar: G
+Encoding: 71 71 20
+Width: 500
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+125 450 m 25
+ 275 450 l 1049
+125 625 m 25
+ 275 625 l 1049
+275 775 m 25
+ 275 125 l 1053
+125 725 m 25
+ 125 225 l 1049
+EndSplineSet
+EndChar

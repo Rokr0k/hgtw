@@ -1,0 +1,16 @@
+StartChar: question
+Encoding: 63 63 65
+Width: 500
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+250 25 m 31
+ 236 25 225 14 225 0 c 27
+ 225 -14 236 -25 250 -25 c 27
+ 264 -25 275 -14 275 0 c 27
+ 275 14 264 25 250 25 c 31
+250 775 m 25
+ 250 150 l 1049
+EndSplineSet
+EndChar

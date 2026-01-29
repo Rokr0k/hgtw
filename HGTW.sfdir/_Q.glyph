@@ -1,0 +1,17 @@
+StartChar: Q
+Encoding: 81 81 57
+Width: 0
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+-625 75 m 25
+ -650 -175 l 1049
+-800 0 m 25
+ -750 -175 l 1049
+-875 -175 m 25
+ -525 -175 l 1053
+-875 75 m 25
+ -525 75 l 1049
+EndSplineSet
+EndChar
