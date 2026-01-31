@@ -5,12 +5,10 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
--612 -50 m 25
- -525 -175 l 1049
--787 -50 m 25
- -700 -175 l 29
- -525 75 l 1049
--700 75 m 25
+-525 -175 m 5
+ -612 75 l 29
+ -700 -175 l 1
+ -787 75 l 25
  -875 -175 l 1049
 EndSplineSet
 EndChar
