@@ -1,14 +1,17 @@
 StartChar: J
-Encoding: 74 74 68
+Encoding: 74 74 16
 Width: 500
-Flags: MW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-100 25 m 25
- 400 25 l 1053
-100 600 m 25
- 250 775 l 25
- 250 25 l 1049
+250 300 m 25
+ 450 300 l 25
+ 450 25 l 1049
+450 550 m 27
+ 450 667 367 775 250 775 c 27
+ 84 775 50 566 50 400 c 27
+ 50 234 84 25 250 25 c 27
+ 367 25 450 133 450 250 c 1048
 EndSplineSet
 EndChar

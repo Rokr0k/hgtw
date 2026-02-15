@@ -1,15 +1,9 @@
 StartChar: three
-Encoding: 51 51 48
+Encoding: 51 51 49
 Width: 0
-Flags: MW
+Flags: W
 LayerCount: 2
 Fore
-SplineSet
--875 -50 m 25
- -525 -50 l 1053
--875 75 m 25
- -875 -175 l 25
- -525 -175 l 25
- -525 75 l 1049
-EndSplineSet
+Refer: 45 117 N 1 0 0 1 -1000 -575 2
+Position2: "patchim" dx=250 dy=0 dh=0 dv=0
 EndChar

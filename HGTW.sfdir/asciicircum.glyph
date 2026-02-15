@@ -1,13 +1,13 @@
 StartChar: asciicircum
-Encoding: 94 94 83
+Encoding: 94 94 12
 Width: 500
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-100 300 m 25
- 400 300 l 1053
-100 500 m 25
- 400 500 l 1049
+450 250 m 25
+ 50 250 l 25
+ 350 775 l 25
+ 350 25 l 1053
 EndSplineSet
 EndChar

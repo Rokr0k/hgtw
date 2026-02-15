@@ -1,13 +1,14 @@
 StartChar: colon
-Encoding: 58 58 71
+Encoding: 58 58 20
 Width: 500
-Flags: MW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-400 300 m 25
- 100 300 l 25
- 300 775 l 25
- 300 25 l 1053
+450 775 m 25
+ 50 400 l 25
+ 450 25 l 1049
+50 775 m 25
+ 50 25 l 1049
 EndSplineSet
 EndChar

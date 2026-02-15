@@ -1,14 +1,11 @@
 StartChar: exclam
-Encoding: 33 33 35
-Width: 0
-Flags: MW
+Encoding: 33 33 42
+Width: 500
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
--700 75 m 25
- -700 -175 l 1049
--875 75 m 25
- -525 75 l 25
- -525 -175 l 1049
+450 775 m 25
+ 50 25 l 1049
 EndSplineSet
 EndChar

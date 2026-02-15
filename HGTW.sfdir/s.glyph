@@ -1,12 +1,9 @@
 StartChar: s
-Encoding: 115 115 34
+Encoding: 115 115 76
 Width: 0
-Flags: M
+Flags: W
 LayerCount: 2
 Fore
-SplineSet
--875 75 m 25
- -875 -175 l 25
- -525 -175 l 1049
-EndSplineSet
+Refer: 47 104 N 1 0 0 1 -1000 -575 2
+Position2: "patchim" dx=250 dy=0 dh=0 dv=0
 EndChar

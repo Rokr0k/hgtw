@@ -1,20 +1,14 @@
 StartChar: dollar
-Encoding: 36 36 46
-Width: 0
+Encoding: 36 36 4
+Width: 500
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
--650 0 m 25
- -625 -175 l 1049
--575 75 m 25
- -575 -175 l 1049
--700 75 m 25
- -700 -50 l 25
- -875 -50 l 25
- -875 -175 l 25
- -525 -175 l 1049
--875 75 m 29
- -525 75 l 1049
+50 600 m 19
+ 50 704 146 775 250 775 c 27
+ 354 775 450 704 450 600 c 27
+ 450 327 50 298 50 25 c 17
+ 51 25 450 25 450 25 c 1049
 EndSplineSet
 EndChar

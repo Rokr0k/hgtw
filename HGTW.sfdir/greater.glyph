@@ -1,15 +1,14 @@
-StartChar: T
-Encoding: 84 84 14
+StartChar: greater
+Encoding: 62 62 27
 Width: 500
 Flags: W
 LayerCount: 2
 Fore
 SplineSet
-50 400 m 25
- 400 400 l 1049
-450 775 m 25
+50 25 m 25
  50 775 l 25
- 50 25 l 25
+ 250 400 l 25
+ 450 775 l 25
  450 25 l 1049
 EndSplineSet
 EndChar

@@ -1,15 +1,12 @@
 StartChar: r
-Encoding: 114 114 18
+Encoding: 114 114 52
 Width: 500
-Flags: MW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-125 450 m 25
- 275 450 l 1049
-275 775 m 25
- 275 125 l 1049
-125 725 m 25
- 125 225 l 1049
+100 775 m 29
+ 100 150 l 1053
 EndSplineSet
+Kerns2: 69 -500 "yae"
 EndChar

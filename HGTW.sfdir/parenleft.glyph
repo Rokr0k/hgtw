@@ -1,11 +1,13 @@
 StartChar: parenleft
-Encoding: 40 40 78
+Encoding: 40 40 8
 Width: 500
 Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-250 775 m 25
- 250 650 l 1049
+50 775 m 25
+ 50 775 449 775 450 775 c 1
+ 450 592 250 533 250 350 c 27
+ 250 204 250 171 250 25 c 1049
 EndSplineSet
 EndChar

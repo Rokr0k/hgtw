@@ -1,15 +1,13 @@
 StartChar: quotesingle
-Encoding: 39 39 15
+Encoding: 39 39 65
 Width: 500
-Flags: MW
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
-125 550 m 25
- 425 550 l 1049
-475 675 m 25
- 125 675 l 25
- 125 425 l 25
- 475 425 l 1049
+150 775 m 25
+ 150 150 l 1049
+-450 250 m 29
+ 150 250 l 1053
 EndSplineSet
 EndChar
